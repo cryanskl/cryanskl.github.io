@@ -113,6 +113,6 @@ bundle exec jekyll serve
 
 [https://huanyushi.github.io/posts/chirpy-blog-customization/](https://huanyushi.github.io/posts/chirpy-blog-customization/)
 
-### 定位主题
+### 定位主题, 获取样式文件
 
 `bundle info --path jekyll-theme-chirpy`
