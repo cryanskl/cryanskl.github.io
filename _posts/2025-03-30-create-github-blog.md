@@ -1,8 +1,8 @@
 ---
 title: How to create a github.io with Jekyll
 date: 2025-03-30 21:29:00 +0800
-categories: [Apps&Tools]
-tags: [tools]     # TAG names should always be lowercase
+categories: [Tools]
+tags: [website]     # TAG names should always be lowercase
 ---
 
 ## 1.安装Ruby
@@ -33,7 +33,9 @@ ruby 3.3.7 (2025-01-15 revision be31f993d7) [x64-mingw-ucrt]
 
 ## 2.安装Jekyll
 
-更改镜像源 `gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/` 
+更改镜像源 `gem sources --add https://gems.ruby-china.com/ `
+
+`gem sources --remove https://rubygems.org/` 
 
 ```
 https://gems.ruby-china.com/ added to sources
@@ -91,25 +93,25 @@ bundle exec jekyll serve
 
 ### 官网
 
-https://github.com/cotes2020/jekyll-theme-chirpy/
+[https://github.com/cotes2020/jekyll-theme-chirpy/](https://github.com/cotes2020/jekyll-theme-chirpy/)
 
 ### 指南
 
-https://chirpy.cotes.page/posts/getting-started/
+[https://chirpy.cotes.page/posts/getting-started/](https://chirpy.cotes.page/posts/getting-started/)
 
 ### 主题
 
-- https://github.com/topics/jekyll-theme
-- https://jekyllthemes.org/
-- https://jekyllthemes.io/
+- [https://github.com/topics/jekyll-theme](https://github.com/topics/jekyll-theme)
+- [https://jekyllthemes.org/](https://jekyllthemes.org/)
+- [https://jekyllthemes.io/](https://jekyllthemes.io/)
 
 ### Mac安装
 
-https://blog.csdn.net/v20000727/article/details/140712498
+[https://blog.csdn.net/v20000727/article/details/140712498](https://blog.csdn.net/v20000727/article/details/140712498)
 
 ### 修改样式
 
-https://huanyushi.github.io/posts/chirpy-blog-customization/
+[https://huanyushi.github.io/posts/chirpy-blog-customization/](https://huanyushi.github.io/posts/chirpy-blog-customization/)
 
 ### 定位主题
 
