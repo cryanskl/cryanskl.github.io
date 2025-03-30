@@ -106,3 +106,11 @@ https://chirpy.cotes.page/posts/getting-started/
 ### Mac安装
 
 https://blog.csdn.net/v20000727/article/details/140712498
+
+### 修改样式
+
+https://huanyushi.github.io/posts/chirpy-blog-customization/
+
+### 定位主题
+
+`bundle info --path jekyll-theme-chirpy`
