@@ -1,119 +1,91 @@
 ---
 ---
 
-@use 'main';
-@use 'sass:math'; // 导入 math 模块
+@use 'main
+{%- if jekyll.environment == ' production ' -%}
+  .bundle
+{%- endif -%}
+';
+@use 'animation.scss'; // 背景动画样式
+@use 'colorbox.scss'; // colorbox 样式
+@use 'details.scss'; // details 元素样式
+@use 'colors/colors-light' as *;
+@use 'colors/colors-dark' as *;
 
 /* append your custom style below */
-#sidebar {
-  background-image: url('https://cdn.jsdelivr.net/gh/huanyushi/Blog-Image-Bed@main/assets/img/background.jpg'); /* <- 使用外部 URL */
-  background-size: cover; /* <- 自定义图片大小 */
-  background-repeat: no-repeat; /* <- 不重复 */
-  background-position: top; /* <- 设置图片位置 */
+
+/* 首页预览 post 标题字体加粗 */
+// #post-list .card-title {
+//   font-weight: bold;
+// }
+
+/* 主页 post 列表加阴影 */
+// #post-list .card {
+//     border-radius: 0.7rem;
+//     box-shadow: var(--language-border-color) 1px 1px 2px 1px;
+// }
+
+// prompt 边框阴影
+blockquote[class^='prompt-'] {
+  box-shadow: var(--language-border-color) 1px 1px 2px 1px; /* 借用了代码框的边框颜色变量 */
 }
 
+// 代码框左上角颜色
+// div[class^=language-] .code-header::before{
+//   background-color: #fc625d;
+//   box-shadow: 1.25rem 0 0 #fdbc40, 2.5rem 0 0 #35cd4b;
+// }
+
+/* 侧边栏背景图片添加 */
+#sidebar {
+  background-image: url(https://cdn.jsdelivr.net/gh/huanyushi/huanyushi.github.io@main/assets/img/background.jpg); /* <- change background image */
+  background-size: cover; /* <- customize the image size */
+  background-repeat: no-repeat; /* <- no-repeat */
+  background-position: top; /* <- image position */
+}
+
+/* 侧边栏相关文字样式设置 */
 #sidebar .site-title a {
   color: #ffffff;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
 #sidebar .site-subtitle {
   color: #ffffff;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 }
-
 #sidebar .sidebar-bottom .mode-toggle,
 #sidebar a {
   color: #ffffff;
 }
-
 #sidebar .sidebar-bottom .btn {
   color: var(--sidebar-btn-color);
 }
 
-/* 生成动画 */
-@keyframes infirot {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+// 让目录不产生折叠效果
+.is-collapsed {
+  max-height: none !important;
 }
 
-.icon-loading1 {
-  display: inline-block;
-  animation: infirot 1s linear infinite;
-  -webkit-animation: infirot 1s linear infinite;
-}
-
-/* 修复随机数函数 */
-@function random_range($min, $max) {
-  $rand: math.random(); // 使用 math.random() 代替 random()
-  $random_range: $min + math.floor($rand * ($max - $min + 1)); // 使用 math.floor() 代替 floor()
-  @return $random_range;
-}
-
-/* 动画部分 */
-#animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-
-  @keyframes animate {
-    0% {
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-      border-radius: 0;
+html {
+  @media (prefers-color-scheme: light) {
+    &:not([data-mode]),
+    &[data-mode='light'] {
+      @include light-colors;
     }
-    100% {
-      transform: translateY(-1200px) rotate(720deg);
-      opacity: 0;
-      border-radius: 50%;
+
+    &[data-mode='dark'] {
+      @include dark-colors;
     }
   }
 
-  /* 大屏幕样式 */
-  @media all and (min-width: 1200px) {
-    .animation-circle {
-      position: absolute;
-      left: var(--circle-left);
-      bottom: -300px;
-      display: block;
-      background: var(--circle-background);
-      width: var(--circle-side-length);
-      height: var(--circle-side-length);
-      animation: animate 25s linear infinite;
-      animation-duration: var(--circle-time);
-      animation-delay: var(--circle-delay);
-      pointer-events: none;
-
-      @for $i from 0 through 50 {
-        &:nth-child(#{$i}) {
-          --circle-left: #{random_range(0%, 100%)};
-          --circle-background: rgba(
-            #{random_range(0, 255)},
-            #{random_range(0, 255)},
-            #{random_range(0, 255)},
-            0.06
-          ); /* 最后一个值为透明度 */
-          --circle-side-length: #{random_range(20px, 200px)};
-          --circle-time: #{random_range(10s, 45s)};
-          --circle-delay: #{random_range(0s, 25s)};
-        }
-      }
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      @include dark-colors;
     }
-  }
 
-  /* 小屏幕样式 */
-  @media all and (max-width: 1199px) {
-    .animation-circle {
-      display: none;
+    &[data-mode='light'] {
+      @include light-colors;
     }
   }
 }

@@ -1,43 +1,67 @@
-# Chirpy Starter
+# Theory of Everything | [Huanyu Shi's Blog](https://huanyushi.github.io/) 
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+This site is made with [Jekyll](https://jekyllrb.com/) using the beautiful [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/) theme. Thanks to the contributors for their work.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## Customization
+Based on Chipy, I've made lots of customization, and I have blogged about these changes. You can see [Chirpy Blog Customization](https://huanyushi.github.io/posts/Chirpy-Blog-Customization/) to get more details (Note that it was written in Chinese).
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+What I have done:
+- Modify the MathJax config file to load the physics package.
+- Add a background image to the sidebar and modify the associated text styles.
+- Add friend links in the sidebar (see this [discussion](https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1677)).
+- <del>Make Further Reading display the latest posts (see this [PR](https://github.com/cotes2020/jekyll-theme-chirpy/pull/1699)).</del> (This PR has been merged after Chirpy v6.5.5)
+- Add site statistics from 'buanzi'([不蒜子](https://busuanzi.ibruce.info/)) in the footer.
+- Add background animation (refer to [@NichtsHsu](https://nihil.cc/)).
+- Add GitHub contribution graph (via [gh-contrib-graph](https://github.com/lengthylyova/gh-contrib-graph)).
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+- Add 4 new prompts (see this [discussion](https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1707)).
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+<table>
+<tr>
+   <th>Light</th>
+   <th>Dark</th>
+</tr>
+<tr>
+<td><img src="assets/img/readme/colorbox-light.PNG" alt="colorbox-light"></td>
+<td><img src="assets/img/readme/colorbox-dark.PNG" alt="colorbox-dark"></td>
+</tr>
+<tr>
+<td><img src="assets/img/readme/colorbox-notitle-light.PNG" alt="colorbox-notitle-light"></td>
+<td><img src="assets/img/readme/colorbox-notitle-dark.PNG" alt="colorbox-notitle-dark"></td>
+</tr>
+</table>
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+- Modified the style of the `details` element.
 
-## Usage
+<table>
+    <tr>
+        <th>Close</th>
+        <td><img src="assets/img/readme/details-close.PNG" alt="details-close"></td>
+    </tr>
+    <tr>
+        <th>Open</th>
+        <td><img src="assets/img/readme/details-open.PNG" alt="details-open"></td>
+    </tr>
+</table>
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+- Python implementation for LQIP (Low Quality Image Placeholders) (see this [discussion](https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1685)).
+- Python implementation for Inverted image.
 
-## Contributing
+## Introduction
+Here, I share study notes and ideas related to my research journey. While updates may be irregular, feel free to drop by anytime to explore. Your visit is appreciated!
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+Some study notes include:
+
+- [Quantum Many-Particle Theory](https://huanyushi.github.io/categories/quantum-many-particle-theory/)
+- [Python Study Notes](https://huanyushi.github.io/categories/python/)
+- ...
+
+PDFs:
+- [Summaries of Zhihu Answers](https://huanyushi.github.io/posts/Mathematics-For-Zhihu/)
+- [LaTeX Lab Report Template](https://huanyushi.github.io/posts/LabReport-Template/)
+- [TikZ Examples](https://huanyushi.github.io/posts/Tikz-Example-Contour-Integration/)
+- ...
 
 ## License
 
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+This work is published under [MIT](LICENSE) License.
