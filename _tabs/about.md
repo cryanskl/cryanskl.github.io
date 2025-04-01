@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## English
+<!-- ## English
 > To each individual the world will take on a different connotation of meaning-the important lies in the desire to search for an answer.  
 > --- T.S. Eliot
 
@@ -22,22 +22,22 @@ Welcome to my Blog! It's generated from a static web page built using Jekyll on 
 * Painting / Stiff Pen Calligraphy
 * C / Fortran / Python / MATLAB / Mathematica / LaTeX / HTML / CSS
 * Chinese / English / Japanese (learning) / French (newbie).
-* 2019-2020 / 2020-2021 / National Scholarship
+* 2019-2020 / 2020-2021 / National Scholarship -->
 
 🌐 **Online Presence:**
 
-* [GitHub](https://github.com/huanyushi)
-* [Zhihu](https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing) (A Chinese Q&A website)
-* [Stack Exchange](https://stackexchange.com/users/24950721/huanyu-shi)
+* [GitHub](https://github.com/cryanskl)
+<!-- * [Zhihu](https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing) (A Chinese Q&A website)
+* [Stack Exchange](https://stackexchange.com/users/24950721/huanyu-shi) -->
 
 📧 **Contact information:**
 
-* Email: [huanyushi2001@gmail.com](mailto:huanyushi2001@gmail.com)
+* Email: [cryanskl@foxmail.com](mailto:cryanskl@foxmail.com)
 
 
 ---
 
-## 中文
+<!-- ## 中文
 > 天地有正气，杂然赋流形。  
 > --- 文天祥
 
@@ -64,4 +64,4 @@ Welcome to my Blog! It's generated from a static web page built using Jekyll on 
 
 📧 **联系方式：**
 
-* Email: [huanyushi2001@gmail.com](mailto:huanyushi2001@gmail.com)
+* Email: [huanyushi2001@gmail.com](mailto:huanyushi2001@gmail.com) -->

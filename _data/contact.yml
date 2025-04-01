@@ -8,7 +8,7 @@
 
 - type: zhihu
   icon: "fab fa-zhihu"
-  url: 'https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing'
+  # url: 'https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing'
 
 
 # - type: stack-exchange
