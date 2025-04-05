@@ -7,7 +7,7 @@ tags: [website]     # TAG names should always be lowercase
 
 ## 1.安装Ruby
 
-安装Jelly我们需要使用`gem install jekyll bundler`,而gem是Ruby 的包管理工具，而 Jekyll 和 Bundler 都是 Ruby 环境中的工具。因此，首先需要确保你已经正确安装了 Ruby，并且将其添加到了系统的 PATH 环境变量中。
+安装 Jekyll 我们需要使用`gem install jekyll bundler`,而gem是Ruby 的包管理工具，而 Jekyll 和 Bundler 都是 Ruby 环境中的工具。因此，首先需要确保你已经正确安装了 Ruby，并且将其添加到了系统的 PATH 环境变量中。
 
 访问 [Ruby 官方网站](https://rubyinstaller.org/) 下载安装包。
 
@@ -87,30 +87,40 @@ bundle exec jekyll serve
 - 打开 `_config.yml` 文件，进行你需要的设置，比如博客名称、描述、社交链接等。
 - 根据之前的建议，在 `_config.yml` 中配置科幻风格的主题样式、字体、背景等。
 
-## N.其他
+## N.推荐阅读
 
-### 官网
+### 官方源码
 
 [https://github.com/cotes2020/jekyll-theme-chirpy/](https://github.com/cotes2020/jekyll-theme-chirpy/)
 
-### 指南
+### 官方指南
 
 [https://chirpy.cotes.page/posts/getting-started/](https://chirpy.cotes.page/posts/getting-started/)
 
-### 主题
+### 免费主题
 
 - [https://github.com/topics/jekyll-theme](https://github.com/topics/jekyll-theme)
 - [https://jekyllthemes.org/](https://jekyllthemes.org/)
 - [https://jekyllthemes.io/](https://jekyllthemes.io/)
 
-### Mac安装
+### Mac的安装方式
 
 [https://blog.csdn.net/v20000727/article/details/140712498](https://blog.csdn.net/v20000727/article/details/140712498)
 
-### 修改样式
+### 推荐样式
 
 [https://huanyushi.github.io/posts/chirpy-blog-customization/](https://huanyushi.github.io/posts/chirpy-blog-customization/)
 
-### 定位主题, 获取样式文件
+### 常用命令
+
+#### 定位主题位置
 
 `bundle info --path jekyll-theme-chirpy`
+
+#### 启动服务
+
+`bundle exec jekyll serve`
+
+#### 安装包依赖
+
+`bundle install --verbose`
