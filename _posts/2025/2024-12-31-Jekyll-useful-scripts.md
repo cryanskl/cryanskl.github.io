@@ -91,7 +91,7 @@ def create_markdown_file(title):
     formatted_title_yaml = format_title_for_yaml(title)
 
     file_name = f"{date_str}-{formatted_title}.md"
-    target_directory = r"D:\"
+    target_directory = r"D:\存在你想要的路径"
     os.makedirs(target_directory, exist_ok=True)
 
     front_matter = f"""---\ntitle: "{formatted_title_yaml}"\ndate: {today.strftime('%Y-%m-%d %H:%M:%S')} +0800\ncategories: [LLM, Tool]\ntags: [foundation, website]\npin: false\n---\n"""
@@ -114,5 +114,28 @@ def create_markdown_file(title):
 title_input = input("Enter the title for the markdown file: ")
 create_markdown_file(title_input)
 
+```
+
+## 3.想用'=='作为高亮
+
+Jekyll不支持'=='作为高亮, 而是用mark标签实现的, 所以我们可以到
+
+`_layouts_>default.html`, 在末尾加上这一段实现:
+
+```python
+    <!-- JavaScripts -->
+    {% include js-selector.html lang=lang %}
+
+    {% include_cached search-loader.html lang=lang %}
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("p, li").forEach(function (el) {
+          el.innerHTML = el.innerHTML.replace(/==(.+?)==/g, '<mark>$1</mark>');
+        });
+      });
+    </script>
+  </body>
+</html>
 ```
 

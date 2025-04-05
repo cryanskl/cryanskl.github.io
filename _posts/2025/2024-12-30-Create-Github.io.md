@@ -63,7 +63,7 @@ gem "minimal-mistakes-jekyll"
 
 添加完主题,下一步安装Ruby依赖.这会安装主题以及其他必要的依赖库。
 
-注意,可以用VSCODE在Gemfile更改source为https://gems.ruby-china.com/
+13 1from datasets import load_dataset,load_from_disk2​3#在线加载数据4#dataset = load_dataset(path='lansinuote/ChnSentiCorp')5#print(dataset)6​7#加载缓存数据8dataseats = load_from_disk(r'绝对路径')9print(datasets) # train, validation, test 训练，验证，测试10​11train_data = datasets['train']12for data in train_data:13    print(data)python
 
 ```python
 bundle install --verbose
