@@ -120,3 +120,35 @@ GPT解答如下:
 - `/posts/foo/` → `posts/foo/index.html`
 
 这些路径在 CDN 中不会冲突到 Markdown 文件名，而首页 `/` 很容易被 CDN 错误映射到 `index.md`（而不是 `index.html`），**尤其是在“回源 Host 头”没设置正确时**。
+
+#### 解决方案
+
+在根目录 index.html 里加上
+
+```python
+---
+layout: home
+permalink: /
+---
+
+<script>
+  (function() {
+    const isLocalhost = window.location.hostname === 'localhost' || 
+                        window.location.hostname === '127.0.0.1' || 
+                        window.location.hostname.startsWith('192.168.') || 
+                        window.location.protocol === 'file:';
+
+    const isRootPath = window.location.pathname === '/' || window.location.pathname === '/index.html';
+
+    if (!isLocalhost && isRootPath) {
+      window.location.href = '/index.html';
+    }
+  })();
+</script>
+
+<noscript>
+  如果没有跳转，请点击 <a href="/index.html">这里</a>。
+</noscript>
+
+```
+

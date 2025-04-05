@@ -84,7 +84,7 @@ print(output)
 
 例如:
 
-```Plain
+```python
 from datasets import load_dataset
 
 #在线加载数据
@@ -97,7 +97,7 @@ dataset.tocsv(path_or_buf=r'绝对路径.CSV') #Linux不加csv，windows加.csv
 
 下载完后能看到huggging face专有的.arrow数据集
 
-```Plain
+```python
 from datasets import load_dataset,load_from_disk
 
 #在线加载数据

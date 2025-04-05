@@ -24,7 +24,7 @@ pin: false
 
 等待安装完程序会自动关闭,接下来 `ruby -v`可以看到版本号
 
-```
+```python
 ruby 3.3.7 (2025-01-15 revision be31f993d7) [x64-mingw-ucrt]
 ```
 
@@ -36,14 +36,14 @@ ruby 3.3.7 (2025-01-15 revision be31f993d7) [x64-mingw-ucrt]
 
 `gem sources --remove https://rubygems.org/` 
 
-```
+```python
 https://gems.ruby-china.com/ added to sources
 https://rubygems.org/ removed from sources
 ```
 
 安装Jekyll `gem install jekyll bundler`,使用`jekyll -v`看是否安装成功
 
-```
+```python
 jekyll 4.4.1
 ```
 
@@ -57,7 +57,7 @@ jekyll 4.4.1
 
 随后在`Gemfile`文件中加下面的命令安装**Minimal Mistakes** 主题
 
-```
+```python
 gem "minimal-mistakes-jekyll"
 ```
 
@@ -65,7 +65,7 @@ gem "minimal-mistakes-jekyll"
 
 注意,可以用VSCODE在Gemfile更改source为https://gems.ruby-china.com/
 
-```
+```python
 bundle install --verbose
 ```
 
@@ -75,7 +75,7 @@ bundle install --verbose
 
 安装完成后，可以通过以下命令启动 Jekyll 的本地开发服务器：
 
-```
+```python
 bundle exec jekyll serve
 ```
 
@@ -116,18 +116,18 @@ bundle exec jekyll serve
 
 #### 定位主题位置
 
-```
+```python
 bundle info --path jekyll-theme-chirpy
 ```
 
 #### 启动服务
 
-```
+```python
 bundle exec jekyll serve
 ```
 
 #### 安装包依赖
 
-```
+```python
 bundle install --verbose
 ```

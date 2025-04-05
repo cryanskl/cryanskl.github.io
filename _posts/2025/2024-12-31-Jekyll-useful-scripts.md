@@ -14,13 +14,13 @@ pin: false
 
 例如, 从typora来看,文件存在
 
-```
+```python
 ![image-20250331014401283](../assets/img/image-20250331014401283.png)
 ```
 
 但Jekyll需要图片的路径是`/assets/img/image-20250331014401283.png`, 因此,我们可以做个脚本放在`_plugins`下,命名为`remove_dotdot_assets.rb`
 
-```
+```python
 Jekyll::Hooks.register :site, :post_render do |page|
   # 确保只对 Markdown 文件进行处理
   if page.is_a?(Jekyll::Document) && page.extname == '.md'
@@ -48,7 +48,7 @@ Jekyll文件的格式有点麻烦,所以写了一个python脚本命名为md.py.
 
 代码里只用改目标目录, 分类和标签
 
-```
+```python
 import os
 import platform
 from datetime import datetime
