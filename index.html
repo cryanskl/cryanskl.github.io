@@ -1,10 +1,10 @@
 ---
 layout: home
+permalink: /
 ---
 
 <script>
   (function() {
-    // 本地访问时不过滤，线上访问才重定向
     const isLocalhost = window.location.hostname === 'localhost' || 
                         window.location.hostname === '127.0.0.1' || 
                         window.location.hostname.startsWith('192.168.') || 
@@ -13,8 +13,11 @@ layout: home
     const isRootPath = window.location.pathname === '/' || window.location.pathname === '/index.html';
 
     if (!isLocalhost && isRootPath) {
-      // 跳转到你希望显示的首页（例如 /index.html）
       window.location.href = '/index.html';
     }
   })();
 </script>
+
+<noscript>
+  如果没有跳转，请点击 <a href="/index.html">这里</a>。
+</noscript>
