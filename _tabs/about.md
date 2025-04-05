@@ -27,8 +27,8 @@ Welcome to my Blog! It's generated from a static web page built using Jekyll on 
 🌐 **Online Presence:**
 
 * [GitHub](https://github.com/cryanskl)
-<!-- * [Zhihu](https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing) (A Chinese Q&A website)
-* [Stack Exchange](https://stackexchange.com/users/24950721/huanyu-shi) -->
+<!-- * [Zhihu](https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing) (A Chinese Q&A website) -->
+<!-- * [Stack Exchange](https://stackexchange.com/users/24950721/huanyu-shi) -->
 
 📧 **Contact information:**
 

@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: Cryanskl # the main title
 
-tagline: Show me the LLM # it will display as the subtitle
+tagline: Output is cheap. Show me the prompt. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A personal blog by Cryanskl

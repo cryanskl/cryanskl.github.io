@@ -1,67 +1,33 @@
-# Theory of Everything | [Huanyu Shi's Blog](https://huanyushi.github.io/) 
+# 🌌 Forked from "Theory of Everything" by Huanyu Shi
 
-This site is made with [Jekyll](https://jekyllrb.com/) using the beautiful [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/) theme. Thanks to the contributors for their work.
+This project is a **fork** of [Huanyu Shi's amazing personal site](https://huanyushi.github.io/), built with [Jekyll](https://jekyllrb.com/) and the beautifully crafted [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/) theme.
 
-## Customization
-Based on Chipy, I've made lots of customization, and I have blogged about these changes. You can see [Chirpy Blog Customization](https://huanyushi.github.io/posts/Chirpy-Blog-Customization/) to get more details (Note that it was written in Chinese).
+## ✨ About This Fork
 
-What I have done:
-- Modify the MathJax config file to load the physics package.
-- Add a background image to the sidebar and modify the associated text styles.
-- Add friend links in the sidebar (see this [discussion](https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1677)).
-- <del>Make Further Reading display the latest posts (see this [PR](https://github.com/cotes2020/jekyll-theme-chirpy/pull/1699)).</del> (This PR has been merged after Chirpy v6.5.5)
-- Add site statistics from 'buanzi'([不蒜子](https://busuanzi.ibruce.info/)) in the footer.
-- Add background animation (refer to [@NichtsHsu](https://nihil.cc/)).
-- Add GitHub contribution graph (via [gh-contrib-graph](https://github.com/lengthylyova/gh-contrib-graph)).
+I've made some minor changes based on the original project to suit my personal preferences or experimental needs.  
+All credit goes to **Huanyu Shi** for his detailed customizations and excellent documentation!
 
-- Add 4 new prompts (see this [discussion](https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1707)).
+> 👉 **I highly recommend checking out the original repository** for full features, design inspiration, and technical insights:  
+> 🔗 [Theory of Everything GitHub Repo](https://github.com/huanyushi/huanyushi.github.io)  
+> 📘 [Huanyu Shi's Blog](https://huanyushi.github.io/)
 
-<table>
-<tr>
-   <th>Light</th>
-   <th>Dark</th>
-</tr>
-<tr>
-<td><img src="assets/img/readme/colorbox-light.PNG" alt="colorbox-light"></td>
-<td><img src="assets/img/readme/colorbox-dark.PNG" alt="colorbox-dark"></td>
-</tr>
-<tr>
-<td><img src="assets/img/readme/colorbox-notitle-light.PNG" alt="colorbox-notitle-light"></td>
-<td><img src="assets/img/readme/colorbox-notitle-dark.PNG" alt="colorbox-notitle-dark"></td>
-</tr>
-</table>
+---
 
-- Modified the style of the `details` element.
+## 🙏 Acknowledgements
 
-<table>
-    <tr>
-        <th>Close</th>
-        <td><img src="assets/img/readme/details-close.PNG" alt="details-close"></td>
-    </tr>
-    <tr>
-        <th>Open</th>
-        <td><img src="assets/img/readme/details-open.PNG" alt="details-open"></td>
-    </tr>
-</table>
+Special thanks to [Huanyu Shi](https://huanyushi.github.io/) for the following work in his original site:
 
-- Python implementation for LQIP (Low Quality Image Placeholders) (see this [discussion](https://github.com/cotes2020/jekyll-theme-chirpy/discussions/1685)).
-- Python implementation for Inverted image.
+- Extensive customization on the Chirpy theme
+- Visual improvements including sidebar backgrounds, animations, and contribution graphs
+- Technical enhancements such as MathJax physics support and LQIP image placeholders
+- Rich content on quantum physics, Python, LaTeX, and more
 
-## Introduction
-Here, I share study notes and ideas related to my research journey. While updates may be irregular, feel free to drop by anytime to explore. Your visit is appreciated!
+If you're interested in the technical blog or want to create your own Jekyll-based site, his project is definitely worth a look!
 
-Some study notes include:
+---
 
-- [Quantum Many-Particle Theory](https://huanyushi.github.io/categories/quantum-many-particle-theory/)
-- [Python Study Notes](https://huanyushi.github.io/categories/python/)
-- ...
+## 📄 License
 
-PDFs:
-- [Summaries of Zhihu Answers](https://huanyushi.github.io/posts/Mathematics-For-Zhihu/)
-- [LaTeX Lab Report Template](https://huanyushi.github.io/posts/LabReport-Template/)
-- [TikZ Examples](https://huanyushi.github.io/posts/Tikz-Example-Contour-Integration/)
-- ...
+This repository inherits the [MIT License](LICENSE) from the original project.
 
-## License
-
-This work is published under [MIT](LICENSE) License.
+---
