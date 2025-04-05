@@ -22,30 +22,11 @@ pin: false
 
 ![image-20250405183139538](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405183139538.png)
 
-------
-
-### ✅ 步骤 2：配置你的域名 DNS（通过阿里云域名控制台）
-
-进入 阿里云域名控制台：
-
-1. 找到你的域名，点击「解析」
-2. 添加一条 `CNAME` 记录：
-
-| 类型    | 主机记录                  | 记录值                   |
-| ------- | ------------------------- | ------------------------ |
-| `CNAME` | `www`（或你希望的子域名） | `yourusername.github.io` |
-
-⚠️ 注意：`记录值` 不加 `https://`，就是纯粹的域名。
-
-![image-20250405183943486](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405183943486.png)
-
-![image-20250405184145641](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405184145641.png)
-
-==这个页面先别离开! 后面CDN还会加一个TXT类型==
+PS:其实这里我没细看, 先做后面.这里因为没有配置dns和cdn, 一定会报错
 
 ------
 
-### ✅ 步骤 3：开通阿里云 CDN 并绑定域名
+### ✅ 步骤 2：开通阿里云 CDN 并绑定域名
 
 1. 打开 [阿里云 CDN 控制台](https://www.aliyun.com/product/cdn)
 2. 点击「添加域名」
@@ -55,7 +36,7 @@ pin: false
    - 加速类型：选择「图片小文件」
    - 源站类型：选择「域名」
    - 源站地址：填写 `yourusername.github.io`
-   - 回源协议：选择「HTTPS」==没看到这个选项, 选择了端口443==
+   - 回源协议：端口443
 3. 添加成功后，阿里云会提示你将 `CNAME` 指向一个 CDN 域名（例如 `xxx.aliyuncdn.com`）
 
 ![image-20250405184716912](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405184716912.png)
@@ -64,9 +45,9 @@ pin: false
 
 ------
 
-### ✅ 步骤 4：修改 DNS，把域名 CNAME 指向阿里云 CDN
+### ✅ 步骤 3：修改 DNS，把域名 CNAME 指向阿里云 CDN
 
-再回到阿里云 DNS 解析控制台：
+去阿里云 DNS 解析控制台：
 
 - 修改或新增一条 `CNAME` 记录：
 
@@ -78,17 +59,64 @@ pin: false
 
 ------
 
-### ✅ 步骤 5：开启 HTTPS（可选但推荐）
+### ✅ 步骤 4：开启 HTTPS
 
 在阿里云 CDN 控制台：
 
 1. 找到你绑定的域名，点击进入配置
 2. 选择「证书管理」或「HTTPS 配置」
-3. 如果你没有证书，可以选择申请免费的 **阿里云托管证书（TrustAsia DV SSL）**
+3. 如果你没有证书，可以选择申请免费的 **阿里云托管证书**
 4. 填写域名等信息后，自动生成并配置 HTTPS
+
+![image-20250405203529103](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405203529103.png)
+
+​	5.回到CDN控制台进行配置
+
+![image-20250405203646882](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405203646882.png)
 
 ------
 
 ## ✅ 完成！
 
 此时你访问 `https://www.yourdomain.com`，就会通过阿里云 CDN 加速访问你的 GitHub Pages 页面，且完全**不再受 github.io 屏蔽的影响**了 🎉
+
+## 2.常见问题
+
+### 2.1.DNS Check需要github.io作为CNAME
+
+如果用了这个为CNAME, 就没有用到CDN, 那么这个配置照样无法顺畅访问
+
+
+
+### 2.2.默认页面index.html
+
+当你配置完, 直接访问首页, 发现内容是
+
+![image-20250405204034656](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405204034656.png)
+
+是没有渲染的md文档, 而其他文件可以正常访问.
+
+GPT解答如下:
+
+#### 🎯 问题本质：阿里云 CDN 回源首页时，返回的是源代码，而不是构建后的 `index.html`
+
+也就是：
+
+- 你访问 `https://www.wuzhixiaojiu.com/` 时
+  - CDN 去回源 `cryanskl.github.io/`
+  - 但可能错误地取到了仓库的 `index.md` 源文件
+  - 而不是真正构建生成的 `index.html`
+
+> 所以你看到的就变成了原始 Markdown 文件内容，而非渲染结果。
+
+------
+
+#### ✅ 为什么其他页面可以正常访问？
+
+因为 GitHub Pages 生成后的页面路径是：
+
+- `index.html` ← 首页
+- `/about/` → `about/index.html`
+- `/posts/foo/` → `posts/foo/index.html`
+
+这些路径在 CDN 中不会冲突到 Markdown 文件名，而首页 `/` 很容易被 CDN 错误映射到 `index.md`（而不是 `index.html`），**尤其是在“回源 Host 头”没设置正确时**。
