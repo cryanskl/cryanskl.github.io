@@ -116,12 +116,18 @@ bundle exec jekyll serve
 
 #### 定位主题位置
 
-`bundle info --path jekyll-theme-chirpy`
+```
+bundle info --path jekyll-theme-chirpy
+```
 
 #### 启动服务
 
-`bundle exec jekyll serve`
+```
+bundle exec jekyll serve
+```
 
 #### 安装包依赖
 
-`bundle install --verbose`
+```
+bundle install --verbose
+```
