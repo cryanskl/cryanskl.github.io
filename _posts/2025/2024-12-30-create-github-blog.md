@@ -1,8 +1,9 @@
 ---
 title: How to create a github.io with Jekyll
-date: 2025-01-01 21:29:00 +0800
-categories: [Tools]
+date: 2024-12-30 21:29:00 +0800
+categories: [Tool]
 tags: [website]     # TAG names should always be lowercase
+pin: false
 ---
 
 ## 1.安装Ruby

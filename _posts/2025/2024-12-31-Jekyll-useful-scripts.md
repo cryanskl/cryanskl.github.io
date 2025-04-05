@@ -1,8 +1,9 @@
 ---
 title: "Jekyll useful scripts"
-date: 2025-03-31 03:50:27 +0800
-categories: [Tools]
-tags: [script, website]     # TAG names should always be lowercase
+date: 2024-12-31 03:50:27 +0800
+categories: [Tool]
+tags: [website, typora]     # TAG names should always be lowercase
+pin: false
 ---
 
 ## 1.和Typora兼并的脚本
