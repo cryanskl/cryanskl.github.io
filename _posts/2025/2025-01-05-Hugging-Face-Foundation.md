@@ -48,7 +48,7 @@ print(f'All have downloaded to {cache_dir}')
 
 我们可以看到, 模型存在safetensors,也可能.pt. 这里config是设置, tokenizer_config是大概多少长度, vocab是字典大小
 
-![img](https://i9tsd87ltj.feishu.cn/space/api/box/stream/download/asynccode/?code=YTc3ODA5MDkzYjYxZjE5YWU3NGU1ZWVkM2VjMjI5YTlfdlRlQVdVamxSOFZvV0Jma2dmMmh2YUNBQlo3bnRVT3ZfVG9rZW46R3JzWWI1dHV5b21hd2N4UjdGdGNya1NHbmZzXzE3NDM4NzY1MTU6MTc0Mzg4MDExNV9WNA)
+![image-20250406032525118](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250406032525118.png)
 
 ## 3.调用本地模型生成器
 
@@ -70,7 +70,7 @@ print(output)
 
 要注意这个绝对路径是包含config.json的地方, 例如
 
-![img](https://i9tsd87ltj.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmNlMmIxZWRjZDU5YTIwNTNhMmE1ZGVlNjkxZWJjYTZfdFl4TkVNa2NOeFNoUTZ4anJWUVdsUU83SWpDNllVU2JfVG9rZW46TmNXSmI3SUJNbzVLZXN4YU1WaGN2QkhWbmRkXzE3NDM4NzY3Njc6MTc0Mzg4MDM2N19WNA)
+![image-20250406032541065](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250406032541065.png)
 
 结果如下:
 

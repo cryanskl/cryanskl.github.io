@@ -131,3 +131,5 @@ bundle exec jekyll serve
 ```python
 bundle install --verbose
 ```
+
+<img src="https://i9tsd87ltj.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmNlMmIxZWRjZDU5YTIwNTNhMmE1ZGVlNjkxZWJjYTZfdFl4TkVNa2NOeFNoUTZ4anJWUVdsUU83SWpDNllVU2JfVG9rZW46TmNXSmI3SUJNbzVLZXN4YU1WaGN2QkhWbmRkXzE3NDM4NzY3Njc6MTc0Mzg4MDM2N19WNA" alt="img" loading="lazy" data-cubox-image-id="331a6fe7306ee979c6ae25cc685fcc2f" data-cubox-image-index="4" data-cubox-image-load="false"
