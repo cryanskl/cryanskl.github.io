@@ -1,5 +1,5 @@
 ---
-title: How to create a github.io with Jekyll
+title: How to Create a Github.io Site with Jekyll
 date: 2024-12-30 21:29:00 +0800
 categories: [Tool]
 tags: [website]     # TAG names should always be lowercase

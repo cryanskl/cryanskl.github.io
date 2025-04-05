@@ -1,5 +1,5 @@
 ---
-title: "Using-AliCloud-OSS-In-Typora"
+title: "Using Alibaba Cloud OSS in Typora"
 date: 2025-01-01 14:32:03 +0800
 categories: [Tool]
 tags: [website, typora]     # TAG names should always be lowercase
@@ -38,10 +38,11 @@ pin: false
 
 在PicGo绑定后,会自动上传test图片到OSS, 如果看到图片成功上传到Bucket列表即算成功.
 
+![image-20250405145841040](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405145841040.png)
+
 接着跟着作者操作, 在Typora选择
 
 ![image-20250405150142852](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405150142852.png)
 
 其实当复制图片进来时, 看到图片有oss标志时就已经算成功了.
 
-![image-20250405145841040](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405145841040.png)
