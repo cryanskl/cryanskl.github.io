@@ -68,36 +68,51 @@ def format_title_case(text):
             formatted.append(word.capitalize())
     return '-'.join(formatted)
 
+def format_title_for_yaml(text):
+    # 跟 format_title_case 一样，但是不加连字符
+    lowercase_words = {
+        'a', 'an', 'the', 'and', 'but', 'or', 'nor', 'for', 'as', 'at',
+        'by', 'in', 'of', 'on', 'to', 'up', 'via', 'with', 'from', 'into'
+    }
+    words = text.split()
+    formatted = []
+    for i, word in enumerate(words):
+        if i > 0 and i < len(words)-1 and word.lower() in lowercase_words:
+            formatted.append(word.lower())
+        else:
+            formatted.append(word.capitalize())
+    return ' '.join(formatted)
+
 def create_markdown_file(title):
     today = datetime.today()
     date_str = today.strftime('%Y-%m-%d')
 
-    # 使用自定义格式化
     formatted_title = format_title_case(title)
-    file_name = f"{date_str}-{formatted_title}.md"
+    formatted_title_yaml = format_title_for_yaml(title)
 
-    target_directory = r"D:\***********这里输入绝对路径哦*************"
+    file_name = f"{date_str}-{formatted_title}.md"
+    target_directory = r"D:\"
     os.makedirs(target_directory, exist_ok=True)
 
-    front_matter = f"""---
-title: "{title}"
-date: {today.strftime('%Y-%m-%d %H:%M:%S')} +0800
-categories: [LLM, Tool]
-tags: [foundation, website]
-pin: false
----
-"""
+    front_matter = f"""---\ntitle: "{formatted_title_yaml}"\ndate: {today.strftime('%Y-%m-%d %H:%M:%S')} +0800\ncategories: [LLM, Tool]\ntags: [foundation, website]\npin: false\n---\n"""
 
     file_path = os.path.join(target_directory, file_name)
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(front_matter + "\n")
 
     print(f"Markdown file created: {file_path}")
-    
-    # 打开文件逻辑保持不变...
+
+    # 自动打开文件
+    if platform.system() == "Windows":
+        os.startfile(file_path)
+    elif platform.system() == "Darwin":  # macOS
+        subprocess.run(["open", file_path])
+    else:  # Linux
+        subprocess.run(["xdg-open", file_path])
 
 # 获取用户输入的标题
 title_input = input("Enter the title for the markdown file: ")
 create_markdown_file(title_input)
+
 ```
 

@@ -76,7 +76,7 @@ PS:其实这里我没细看, 先做后面.这里因为没有配置dns和cdn, 一
 
 ------
 
-## ✅ 完成！
+### ✅ 完成！
 
 此时你访问 `https://www.yourdomain.com`，就会通过阿里云 CDN 加速访问你的 GitHub Pages 页面，且完全**不再受 github.io 屏蔽的影响**了 🎉
 
