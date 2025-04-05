@@ -1,5 +1,5 @@
 ---
-title: "Hugging Face Beginner"
+title: "Getting Started with Hugging Face"
 date: 2025-01-05 22:17:42 +0800
 categories: [LLM]
 tags: [hugggingface, llm]
