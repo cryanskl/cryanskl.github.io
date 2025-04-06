@@ -2,7 +2,7 @@
 title: "Using Alibaba Cloud OSS in Typora"
 date: 2025-01-01 14:32:03 +0800
 categories: [Tool]
-tags: [website, typora]     # TAG names should always be lowercase
+tags: [website, typora, alicloud]     # TAG names should always be lowercase
 pin: false
 ---
 
