@@ -115,27 +115,3 @@ title_input = input("Enter the title for the markdown file: ")
 create_markdown_file(title_input)
 
 ```
-
-## 3.想用'=='作为高亮
-
-Jekyll不支持'=='作为高亮, 而是用mark标签实现的, 所以我们可以到
-
-`_layouts_>default.html`, 在末尾加上这一段实现:
-
-```python
-    <!-- JavaScripts -->
-    {% include js-selector.html lang=lang %}
-
-    {% include_cached search-loader.html lang=lang %}
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll("p, li").forEach(function (el) {
-          el.innerHTML = el.innerHTML.replace(/==(.+?)==/g, '<mark>$1</mark>');
-        });
-      });
-    </script>
-  </body>
-</html>
-```
-
