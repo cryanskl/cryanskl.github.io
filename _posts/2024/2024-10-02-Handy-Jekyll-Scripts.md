@@ -1,6 +1,6 @@
 ---
 title: "Handy Jekyll Scripts"
-date: 2024-12-31 03:50:27 +0800
+date: 2024-10-02 03:50:27 +0800
 categories: [Tool]
 tags: [website, typora]     # TAG names should always be lowercase
 pin: false

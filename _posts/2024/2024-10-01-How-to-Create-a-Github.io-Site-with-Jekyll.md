@@ -1,6 +1,6 @@
 ---
 title: How to Create a Github.io Site with Jekyll
-date: 2024-12-30 21:29:00 +0800
+date: 2024-10-01 21:29:00 +0800
 categories: [Tool]
 tags: [website]     # TAG names should always be lowercase
 pin: false
