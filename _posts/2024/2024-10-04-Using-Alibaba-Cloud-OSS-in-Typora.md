@@ -1,6 +1,6 @@
 ---
 title: "Using Alibaba Cloud OSS in Typora"
-date: 2025-01-01 14:32:03 +0800
+date: 2024-10-04 14:32:03 +0800
 categories: [Tool]
 tags: [website, typora, alicloud]     # TAG names should always be lowercase
 pin: false
@@ -16,11 +16,11 @@ pin: false
 
 ## 2.使用阿里云对象存储OSS
 
-直接跟着这篇文章就可以:https://zhuanlan.zhihu.com/p/678419508
+直接跟着这篇文章就可以:[https://zhuanlan.zhihu.com/p/678419508](https://zhuanlan.zhihu.com/p/678419508)
 
 ### 2.1.访问阿里云OSS
 
-地址: https://www.aliyun.com/product/oss?spm=5176.21213303.J_v8LsmxMG6alneH-O7TCPa.8.1f002f3dZbM4cJ&scm=20140722.S_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633._.ID_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633-RL_%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-LOC_2024SPAllResult-OR_ser-PAR1_213e36e417438357211394388e93a9-V_4-RE_new3-P0_0-P1_0
+地址: [https://www.aliyun.com/product/oss?spm=5176.21213303.J_v8LsmxMG6alneH-O7TCPa.8.1f002f3dZbM4cJ&scm=20140722.S_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633._.ID_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633-RL_%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-LOC_2024SPAllResult-OR_ser-PAR1_213e36e417438357211394388e93a9-V_4-RE_new3-P0_0-P1_0](https://www.aliyun.com/product/oss?spm=5176.21213303.J_v8LsmxMG6alneH-O7TCPa.8.1f002f3dZbM4cJ&scm=20140722.S_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633._.ID_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633-RL_%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-LOC_2024SPAllResult-OR_ser-PAR1_213e36e417438357211394388e93a9-V_4-RE_new3-P0_0-P1_0)
 
 需要注意的是, 资源要选对, 不然会贵将近十倍
 

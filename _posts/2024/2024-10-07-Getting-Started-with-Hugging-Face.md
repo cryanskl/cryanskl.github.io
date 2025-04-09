@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Hugging Face"
-date: 2025-01-05 22:17:42 +0800
+date: 2024-10-07 22:17:42 +0800
 categories: [LLM]
 tags: [hugggingface, llm]
 pin: false
@@ -8,7 +8,7 @@ pin: false
 
 ## 1.本地在线调用Hugging Face API
 
-官网: https://huggingface.co/
+官网: [https://huggingface.co/](https://huggingface.co/)
 
 登录后点击头像, 获取列表的 Access Tokens. 建议权限都打开
 
@@ -78,7 +78,7 @@ print(output)
 
 ## 4.数据获取
 
-地址: https://huggingface.co/datasets
+地址: [https://huggingface.co/datasets](https://huggingface.co/datasets)
 
 一般如果没写缓存, 会默认存在.cache/huggingface/datasets
 

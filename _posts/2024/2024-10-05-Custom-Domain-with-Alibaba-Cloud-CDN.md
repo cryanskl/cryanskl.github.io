@@ -1,6 +1,6 @@
 ---
 title: "Custom Domain with Alibaba Cloud CDN"
-date: 2025-01-03 18:24:37 +0800
+date: 2024-10-05 18:24:37 +0800
 categories: [Tool]
 tags: [website, alicloud]
 pin: false
@@ -28,7 +28,7 @@ PS:其实这里我没细看, 先做后面.这里因为没有配置dns和cdn, 一
 
 ### ✅ 步骤 2：开通阿里云 CDN 并绑定域名
 
-1. 打开 [阿里云 CDN 控制台](https://www.aliyun.com/product/cdn)
+1. 打开 阿里云 CDN 控制台
 2. 点击「添加域名」
    - 加速域名填写你的域名，例如 `www.yourdomain.com`
      - ==请注意, 这里会让你在刚才DNS加一个TXT类型, 可以点击帮助文档, 写的很详细==
