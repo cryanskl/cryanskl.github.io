@@ -2,7 +2,7 @@
 title: "Getting Started with Chroma"
 date: 2024-11-02 19:42:01 +0800
 categories: [LLM]
-tags: [llm, chroma]
+tags: [llm, chroma, rag]
 pin: false
 ---
 
