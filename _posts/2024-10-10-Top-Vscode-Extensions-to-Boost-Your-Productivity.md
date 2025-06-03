@@ -2,7 +2,7 @@
 title: "Top Vscode Extensions to Boost Your Productivity"
 date: 2024-10-10 14:14:25 +0800
 categories: [Tool]
-tags: [python, vscode]
+tags: [vscode]
 pin: false
 ---
 
