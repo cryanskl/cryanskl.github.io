@@ -1,8 +1,8 @@
 ---
 title: "Getting Started with Chroma"
-date: 2025-06-03 10:34:34 +0800
+date: 2025-06-03 10:39:34 +0800
 categories: [LLM, Tool]
-tags: [llm, rag, website, script]
+tags: [llm, website, script]
 pin: false
 ---
 
@@ -139,4 +139,3 @@ import chromadb
 
 chroma_client = chromadb.HttpClient(host='localhost', port=8000)
 ```
-
