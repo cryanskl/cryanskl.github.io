@@ -3,7 +3,7 @@ title: "How to Choose the Right GPU"
 date: 2024-12-02 19:42:29 +0800
 categories: [LLM]
 tags: [gpu]
-pin: true
+pin: false
 ---
 
 ## 1.主流GPU分类
@@ -98,7 +98,7 @@ A系列适合训练不适合推理
 
 进一步来说，英伟达还推出了更高级的互连技术——**NVSwitch**。NVLink 是用于两个 GPU 之间的点对点连接，而 NVSwitch 则是用于多个 GPU 间的**全互联**架构，支持多路 GPU 高速互通。目前 **H100 及以上型号的英伟达 GPU** 已经支持 NVSwitch，内部传输带宽高达 **7.2 TB/s**，远远超过 NVLink，是数据中心级 AI 集群的关键组件。
 
-#### 3090VS4090
+### 3090VS4090
 
 ![image-20250602095431579](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602095431579.png)
 

@@ -2,7 +2,7 @@
 title: "Embedding Models and Vector Databases"
 date: 2024-11-01 13:06:01 +0800
 categories: [LLM]
-tags: [llm,rag]
+tags: [llm, rag]
 pin: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Langchain Basics Made Simple"
 date: 2024-11-06 17:29:30 +0800
 categories: [LLM]
-tags: [llm,rag,langchain,project]
+tags: [llm, rag, langchain, project]
 pin: false
 ---
 
