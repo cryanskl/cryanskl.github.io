@@ -3,12 +3,12 @@ title: "How to Choose the Right GPU"
 date: 2024-12-02 19:42:29 +0800
 categories: [LLM]
 tags: [gpu]
-pin: false
+pin: true
 ---
 
 ## 1.主流GPU分类
 
-![image-20250602082938039](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602082938039.png)
+![image-20250605133742435](../assets/typoraimg/image-20250605133742435.png)
 
 第一档, A或H, A800, H800运算性能没砍, 显存带宽80%
 
@@ -22,7 +22,7 @@ T不推荐
 
 ### **性能**
 
-![image-20250602083013648](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602083013648.png)
+![image-20250605133859479](../assets/typoraimg/image-20250605133859479.png)
 
 A系列适合训练不适合推理
 
@@ -38,7 +38,7 @@ A系列适合训练不适合推理
 
 ### **性价比**
 
-![image-20250602083056379](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602083056379.png)
+![image-20250605133835466](../assets/typoraimg/image-20250605133835466.png)
 
 在这里我们还没有把显存等因素，以及多卡组成集群所带来的性能损耗考虑进去。我们只关注一个核心问题：在单卡场景下，**单位价格所能买到的显卡性能**排名如何。
 
@@ -50,37 +50,37 @@ A系列适合训练不适合推理
 
 ### **运行/推理**
 
-![image-20250602090513319](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602090513319.png)
+![image-20250605133920666](../assets/typoraimg/image-20250605133920666.png)
 
 ### **训练/微调**
 
-![image-20250602090704545](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602090704545.png)
+![image-20250605133942712](../assets/typoraimg/image-20250605133942712.png)
 
->注意: 以下GPU的选用, 4090可以替换3090, A100替换A800, L40替换为L20
+> 注意: 以下GPU的选用, 4090可以替换3090, A100替换A800, L40替换为L20
 
 ### **推荐推理GPU**
 
-<img src="https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602090949407.png" alt="image-20250602090949407" style="zoom:50%;" />
+<img src="../assets/typoraimg/image-20250605144500117.png" alt="image-20250605144500117" style="zoom:50%;" />
 
 ### **推荐训练GPU**
 
-![image-20250602091015939](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602091015939.png)
+<img src="../assets/typoraimg/image-20250605144513239.png" alt="image-20250605144513239" style="zoom:50%;" />
 
 ### **高效微调GPU**
 
-![image-20250602091051933](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602091051933.png)
+<img src="../assets/typoraimg/image-20250605144527529.png" alt="image-20250605144527529" style="zoom:50%;" />
 
 ## 4.不同使用场景下推荐GPU配置
 
-<img src="https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602091608429.png" alt="image-20250602091608429" style="zoom:50%;" />
+![image-20250605144548841](../assets/typoraimg/image-20250605144548841.png)
 
 ## 5.GPU理论补充与对比
 
 ### 基础数据
 
-![image-20250602094148082](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602094148082.png)
+![image-20250605134134278](../assets/typoraimg/image-20250605134134278.png)
 
-![image-20250602094346870](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602094346870.png)
+![image-20250605144606111](../assets/typoraimg/image-20250605144606111.png)
 
 目前对于英伟达来说，从 RTX 30 系列开始，其民用级显卡已不再配备 **NVLink** 技术。这主要是因为在实际应用中，很少有人使用 RTX 30 系列显卡（例如 3070 或 3080）进行多卡服务器组建。
 
@@ -100,11 +100,11 @@ A系列适合训练不适合推理
 
 ### 3090VS4090
 
-![image-20250602095431579](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602095431579.png)
+![image-20250605134213464](../assets/typoraimg/image-20250605134213464.png)
 
 ### A100VSA800
 
-![image-20250602095612828](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250602095612828.png)
+![image-20250605134159748](../assets/typoraimg/image-20250605134159748.png)
 
 ## References
 

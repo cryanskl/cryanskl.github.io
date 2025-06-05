@@ -12,8 +12,6 @@ pin: false
 
 [https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&envId=top-100-liked](https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&envId=top-100-liked)
 
-![image-20250414160404884](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250414160404884.png)
-
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -31,8 +29,6 @@ class Solution:
 
 [https://leetcode.cn/problems/group-anagrams/description/?envType=study-plan-v2&envId=top-100-liked](https://leetcode.cn/problems/group-anagrams/description/?envType=study-plan-v2&envId=top-100-liked)
 
-![image-20250414162246227](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250414162246227.png)
-
 ```python
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
@@ -49,8 +45,6 @@ class Solution:
 ### 3.哈希:最长连续序列
 
 [https://leetcode.cn/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-100-liked](https://leetcode.cn/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-100-liked)
-
-![image-20250414162938482](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250414162938482.png)
 
 ```python
 class Solution:

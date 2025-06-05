@@ -1,7 +1,7 @@
 ---
 title: "Custom Domain with Alibaba Cloud CDN"
 date: 2024-10-05 18:24:37 +0800
-categories: [Tool]
+categories: [Dev]
 tags: [website, alicloud]
 pin: false
 ---
@@ -20,8 +20,6 @@ pin: false
 4. GitHub 会自动在仓库根目录生成一个 `CNAME` 文件，内容为你的域名
 5. ⚠️ 等 GitHub 部署完成（可能需要几分钟）
 
-![image-20250405183139538](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405183139538.png)
-
 PS:其实这里我没细看, 先做后面.这里因为没有配置dns和cdn, 一定会报错
 
 ------
@@ -32,16 +30,11 @@ PS:其实这里我没细看, 先做后面.这里因为没有配置dns和cdn, 一
 2. 点击「添加域名」
    - 加速域名填写你的域名，例如 `www.yourdomain.com`
      - ==请注意, 这里会让你在刚才DNS加一个TXT类型, 可以点击帮助文档, 写的很详细==
-     - ![https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/6330967271/p855492.png](https://zr-picture.oss-cn-shanghai.aliyuncs.com/p855492.png)
    - 加速类型：选择「图片小文件」
    - 源站类型：选择「域名」
    - 源站地址：填写 `yourusername.github.io`
    - 回源协议：端口443
 3. 添加成功后，阿里云会提示你将 `CNAME` 指向一个 CDN 域名（例如 `xxx.aliyuncdn.com`）
-
-![image-20250405184716912](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405184716912.png)
-
-![image-20250405185822406](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405185822406.png)
 
 ------
 
@@ -67,12 +60,7 @@ PS:其实这里我没细看, 先做后面.这里因为没有配置dns和cdn, 一
 2. 选择「证书管理」或「HTTPS 配置」
 3. 如果你没有证书，可以选择申请免费的 **阿里云托管证书**
 4. 填写域名等信息后，自动生成并配置 HTTPS
-
-![image-20250405203529103](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405203529103.png)
-
-​	5.回到CDN控制台进行配置
-
-![image-20250405203646882](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405203646882.png)
+5. 回到CDN控制台进行配置
 
 ------
 
@@ -91,8 +79,6 @@ PS:其实这里我没细看, 先做后面.这里因为没有配置dns和cdn, 一
 ### 2.2.默认页面index.html
 
 当你配置完, 直接访问首页, 发现内容是
-
-![image-20250405204034656](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250405204034656.png)
 
 是没有渲染的md文档, 而其他文件可以正常访问.
 

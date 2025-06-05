@@ -1,7 +1,7 @@
 ---
 title: How to Create a Github.io Site with Jekyll
 date: 2024-10-01 21:29:00 +0800
-categories: [Tool]
+categories: [Dev]
 tags: [website]     # TAG names should always be lowercase
 pin: false
 ---
@@ -14,11 +14,7 @@ pin: false
 
 我们下载了 [Ruby+Devkit 3.3.7-1 (x64)](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.3.7-1/rubyinstaller-devkit-3.3.7-1-x64.exe) 
 
-![image-20250331014401283](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250331014401283.png)
-
 在安装 Ruby 时，**MSYS2** 是必需的，它是 Ruby 在 Windows 上运行所需要的开发工具集和库。**Devkit**（开发工具包）是 MSYS2 的一部分，用于支持 Ruby 扩展和原生扩展的编译。所以，是的，你需要下载和安装 MSYS2 以及 Devkit。
-
-![image-20250331014415695](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250331014415695.png)
 
 地址: [https://www.aliyun.com/product/oss?spm=5176.21213303.J_v8LsmxMG6alneH-O7TCPa.8.1f002f3dZbM4cJ&scm=20140722.S_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633._.ID_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633-RL_%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-LOC_2024SPAllResult-OR_ser-PAR1_213e36e417438357211394388e93a9-V_4-RE_new3-P0_0-P1_0](https://www.aliyun.com/product/oss?spm=5176.21213303.J_v8LsmxMG6alneH-O7TCPa.8.1f002f3dZbM4cJ&scm=20140722.S_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633._.ID_product@@%E4%BA%91%E4%BA%A7%E5%93%81@@102633-RL_%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-LOC_2024SPAllResult-OR_ser-PAR1_213e36e417438357211394388e93a9-V_4-RE_new3-P0_0-P1_0)
 
@@ -29,8 +25,6 @@ ruby 3.3.7 (2025-01-15 revision be31f993d7) [x64-mingw-ucrt]
 ```
 
 更改镜像源 `gem sources --add https://gems.ruby-china.com/ `
-
-`gem sources --remove https://rubygems.org/` 
 
 ```python
 https://gems.ruby-china.com/ added to sources

@@ -41,7 +41,7 @@ pin: false
 - **余弦相似度**：反映两个向量方向的相似程度，就像比较两支箭是否指向相同方向
 - **欧氏距离**：计算向量之间的直线距离，类似用尺子量两个点的距离
 
-![image-20250531140305407](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250531140305407.png)
+![image-20250605133105698](../assets/typoraimg/image-20250605133105698.png)
 
 ### 计算方式
 

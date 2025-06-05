@@ -12,8 +12,6 @@ pin: false
 
 登录后点击头像, 获取列表的 Access Tokens. 建议权限都打开
 
-![image-20250406020136586](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250406020136586.png)
-
 随后可以尝试在本地简单调用
 
 ```python
@@ -28,8 +26,6 @@ print(response.json())
 ```
 
 可能会有网络波动, 回复的不快或失败.
-
-![image-20250406020702349](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250406020702349.png)
 
 ## 2.本地下载模型, 分词器
 
@@ -47,8 +43,6 @@ print(f'All have downloaded to {cache_dir}')
 ```
 
 我们可以看到, 模型存在safetensors,也可能.pt. 这里config是设置, tokenizer_config是大概多少长度, vocab是字典大小
-
-![image-20250406032525118](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250406032525118.png)
 
 ## 3.调用本地模型生成器
 
@@ -70,11 +64,7 @@ print(output)
 
 要注意这个绝对路径是包含config.json的地方, 例如
 
-![image-20250406032541065](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250406032541065.png)
-
 结果如下:
-
-![image-20250406021414658](https://zr-picture.oss-cn-shanghai.aliyuncs.com/image-20250406021414658.png)
 
 ## 4.数据获取
 

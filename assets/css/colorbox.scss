@@ -1,3 +1,4 @@
+@use "sass:math";
 /* colorbox 样式设计 */
 /* 定义了 box-info, box-tip, box-warning, box-danger 四种 colorbox */
 @mixin colorbox($border-color, $icon-color, $icon-content, $bg-color, $fa-style: 'solid') {
