@@ -35,8 +35,17 @@ if errorlevel 1 (
 )
 
 echo.
+echo 🔄 正在刷新阿里云 CDN 缓存...
+aliyun cdn RefreshObjectCaches --ObjectPath https://www.wuzhixiaojiu.com/ --ObjectType Directory > nul
+if errorlevel 1 (
+    echo ❌ CDN 缓存刷新失败，请检查 aliyun CLI 登录状态。
+    pause
+    exit /b
+)
+
+echo.
 echo 🌐 正在打开博客首页...
-start https://wuzhixiaojiu.com
+start https://www.wuzhixiaojiu.com
 
 echo.
 echo ✅ 博客部署完成！

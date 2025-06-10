@@ -1,5 +1,4 @@
-<!-- The Footer -->
-
+<!-- The Footer --> 
 <footer
   aria-label="Site Info"
   class="
@@ -27,9 +26,11 @@
       </span>
     {% endif %}
   </p>
-
+  
   <p>
-    {% include footer-busuanzi.html %}
+    <i class="fa fa-eye" aria-hidden="true"></i>
+    本页浏览 <span id="leancloud_pv">2476</span> 次 |
+    总访问量 <span id="leancloud_total">13481</span> 次
   </p>
 
   <p>
@@ -51,3 +52,26 @@
     {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
   </p>
 </footer>
+
+<!-- ✅ LeanCloud SDK + 初始化 + 浏览量脚本 -->
+<script>
+  if (!window._AV_INITED) {
+    const script = document.createElement('script');
+    script.src = '/assets/lib/leancloud/av-min.js';
+    script.onload = () => {
+      if (!AV.applicationId) {
+        AV.init({
+          appId: 'ZXG9QQe58BFo3O4clJgHOB8O-gzGzoHsz',
+          appKey: 'H7Uj9y0oc0upwZxGe7J3kW6W',
+          serverURLs: 'https://zxg9qqe5.lc-cn-n1-shared.com'
+        });
+        window._AV_INITED = true;
+      }
+
+      const pv = document.createElement('script');
+      pv.src = '/assets/js/pageviews.js';
+      document.body.appendChild(pv);
+    };
+    document.head.appendChild(script);
+  }
+</script>

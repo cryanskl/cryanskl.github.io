@@ -1,78 +1,79 @@
 @use "sass:math";
-/* 生成动画 */
+
+/* ✅ 无限旋转 loading 动画 */
 @keyframes infirot {
-    from {
-      -webkit-transform: rotate(0deg);
+  from { -webkit-transform: rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg); }
+}
+
+.icon-loading1 {
+  display: inline-block;
+  animation: infirot 1s linear infinite;
+  -webkit-animation: infirot 1s linear infinite;
+}
+
+/* ✅ 随机范围函数，用于生成不同粒子属性 */
+@function random_range($min, $max) {
+  $rand: math.random();
+  $random_range: $min + math.floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+/* ✅ 粒子动画容器 */
+#animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
     }
-  
-    to {
-      -webkit-transform: rotate(360deg);
+    100% {
+      transform: translateY(-1200px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
     }
   }
-  
-  .icon-loading1 {
-    display: inline-block;
-    animation: infirot 1s linear infinite;
-    -webkit-animation: infirot 1s linear infinite;
-  }
-  
-  @function random_range($min, $max) {
-    $rand: math.random();
-    $random_range: $min + math.floor($rand * (($max - $min) + 1));
-    @return $random_range;
-  }
-  
-  #animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-  
-    @keyframes animate {
-      0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-      }
-      100% {
-        transform: translateY(-1200px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-      }
-    }
-  
-    @media all and (min-width: 1200px) {
-      .animation-circle {
-        position: absolute;
-        left: var(--circle-left);
-        bottom: -300px;
-        display: block;
-        background: var(--circle-background);
-        width: var(--circle-side-length);
-        height: var(--circle-side-length);
-        animation: animate 25s linear infinite;
-        animation-duration: var(--circle-time);
-        animation-delay: var(--circle-delay);
-        pointer-events: none;
-  
-        @for $i from 0 through 50 {
-          &:nth-child(#{$i}) {
-            --circle-left: #{random_range(0%, 100%)};
-            --circle-background: rgba(#{random_range(0, 255)}, #{random_range(0, 255)}, #{random_range(0, 255)}, 0.06); // 最后一个数为透明度
-            --circle-side-length: #{random_range(20px, 200px)};
-            --circle-time: #{random_range(10s, 45s)};
-            --circle-delay: #{random_range(0s, 25s)};
-          }
+
+  /* ✅ 桌面端展示动画粒子 */
+  @media all and (min-width: 1200px) {
+    .animation-circle {
+      position: absolute;
+      left: var(--circle-left);
+      bottom: -300px;
+      display: block;
+      background: var(--circle-background);
+      width: var(--circle-side-length);
+      height: var(--circle-side-length);
+      animation: animate 25s linear infinite;
+      animation-duration: var(--circle-time);
+      animation-delay: var(--circle-delay);
+      pointer-events: none;
+      will-change: transform, opacity;
+
+      @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+          --circle-left: #{random_range(0%, 100%)};
+          --circle-background: rgba(150, 200, 255, 0.03);
+          --circle-side-length: #{random_range(20px, 100px)};
+          --circle-time: #{random_range(10s, 30s)};
+          --circle-delay: #{random_range(0s, 10s)};
         }
       }
     }
-  
-    @media all and (max-width: 1199px) {
-      .animation-circle {
-        display: none;
-      }
+  }
+
+  /* ✅ 移动端禁用 */
+  @media all and (max-width: 1199px) {
+    .animation-circle {
+      display: none;
     }
   }
+}

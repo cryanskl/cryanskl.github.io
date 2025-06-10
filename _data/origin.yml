@@ -1,0 +1,32 @@
+type: local
+
+local:
+  search:
+    js: /assets/lib/simple-jekyll-search/simple-jekyll-search.min.js
+  lazy-polyfill:
+    js: /assets/lib/loading-attribute-polyfill/loading-attribute-polyfill.umd.min.js
+  glightbox:
+    js: /assets/lib/glightbox/glightbox.min.js
+  clipboard:
+    js: /assets/lib/clipboard/clipboard.min.js
+  dayjs:
+    js:
+      common: /assets/lib/dayjs/dayjs.min.js
+      locale: /assets/lib/dayjs/locale/en.js       # 或 zh-cn.js 看你要的语言
+      relativeTime: /assets/lib/dayjs/plugin/relativeTime.js
+      localizedFormat: /assets/lib/dayjs/plugin/localizedFormat.js
+  mermaid:
+    js: /assets/lib/mermaid/mermaid.min.js
+  mathjax:
+    js: /assets/js/data/startup.js
+  fontawesome:
+    css: /assets/lib/fontawesome-free/css/all.min.css
+  tocbot:
+    js: /assets/lib/tocbot/tocbot.min.js
+    css: /assets/lib/tocbot/tocbot.min.css
+  leancloud:
+    js: /assets/lib/leancloud/av-min.js
+  pageviews:
+    js: /assets/js/pageviews.js
+  bootstrap:
+    css: /assets/lib/bootstrap/bootstrap.min.css

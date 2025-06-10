@@ -60,8 +60,8 @@ theme_mode: light
 
 cdn: "https://zr-picture.oss-cn-shanghai.aliyuncs.com/"
 
-avatar: "jerry.png"
-social_preview_image: "jerry.png"
+avatar: "/assets/img/jerry.webp"
+social_preview_image: "/assets/img/jerry.webp"
 
 toc: true
 
@@ -80,8 +80,8 @@ comments:
 
 assets:
   self_host:
-    enabled:
-    env:
+    enabled: true
+    env: 
 
 pwa:
   enabled: true

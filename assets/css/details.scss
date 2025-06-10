@@ -105,3 +105,19 @@ details.details-inline > summary::before {
 details.details-inline[open] > summary::before {
     transform: rotate(135deg);
 }
+
+/* ✅ 强化可访问性：summary focus outline */
+details > summary:focus {
+    outline: 2px dashed #888;
+    outline-offset: 2px;
+  }
+  
+  /* ✅ 增强识别性：summary 视觉效果优化 */
+  details.details-block > summary,
+  details.details-inline > summary {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--details-border-color);
+  }
+  

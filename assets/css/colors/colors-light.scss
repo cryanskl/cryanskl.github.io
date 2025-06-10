@@ -1,9 +1,15 @@
 @use "sass:math";
+
 @mixin light-colors {
-    // 定义的颜色
-    --details-border-color: #8458B3;
-    --details-bg: #e5eaf5;
-    // 修改了明亮模式下原主题的颜色
-    --prompt-tip-bg: #D2E3C8;
-    --prompt-tip-icon-color: #4F6F52;
+  // ✅ details 区块样式
+  --details-border-color: #8458B3;
+  --details-bg: #e5eaf5;
+
+  // ✅ 提示框样式（提示色优化）
+  --prompt-tip-bg: #D2E3C8;
+  --prompt-tip-icon-color: #4F6F52;
+
+  // 你也可以添加更多变量，例如：
+  // --prompt-info-bg: #E0F2F1;
+  // --prompt-danger-bg: #FFCDD2;
 }

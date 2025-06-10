@@ -76,3 +76,36 @@
     var(--prompt-danger-bg)
 );
 }
+
+/* 🔧 可访问性辅助建议（手动加 role="alert" 和 aria-label） */
+
+@media (max-width: 768px) {
+    .box-info, .box-tip, .box-warning, .box-danger {
+      padding: 1rem;
+      font-size: 0.95rem;
+  
+      > div.title {
+        padding-left: 2.5rem;
+      }
+    }
+  }
+  
+  /* 🔁 鼠标 hover 效果反馈 */
+  .box-info:hover,
+  .box-tip:hover,
+  .box-warning:hover,
+  .box-danger:hover {
+    filter: brightness(1.02);
+    transition: filter 0.2s ease-in-out;
+  }
+  
+  /* 👀 渐入动画 */
+  .box-info, .box-tip, .box-warning, .box-danger {
+    animation: fadein 0.5s ease;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  

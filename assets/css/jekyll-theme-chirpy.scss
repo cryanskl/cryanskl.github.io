@@ -35,7 +35,7 @@ blockquote[class^='prompt-']{
 
 /* 侧边栏背景图片添加 */
 #sidebar {
-    background-image: url(https://zr-picture.oss-cn-shanghai.aliyuncs.com/background1.jpg); /* <- change background image */
+    background-image: url(https://zr-picture.oss-cn-shanghai.aliyuncs.com/background1.webp); /* <- change background image */
     background-size: cover; /* <- customize the image size */
     background-repeat: no-repeat; /* <- no-repeat */
     background-position: top; /* <- image position */
@@ -93,3 +93,40 @@ html {
 @import "animation.scss";    // 背景动画样式
 @import "colorbox.scss";     // colorbox 样式
 @import "details.scss";      // details 元素样式
+
+/* 🔧 修复对比度不足的导航文本（Lighthouse accessibility） */
+#sidebar a,
+#sidebar span,
+#sidebar .site-title a,
+#sidebar .site-subtitle,
+#sidebar .sidebar-bottom .btn,
+#sidebar .sidebar-bottom .mode-toggle {
+  color: #ffffff !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); /* 增加清晰度 */
+}
+
+/* 🧩 解决链接依赖颜色无法识别的问题 */
+a {
+  text-decoration: underline; /* 强制下划线 */
+  text-underline-offset: 2px;
+}
+
+/* 🧼 只在侧边导航栏保留 hover 效果更自然 */
+#sidebar a:hover {
+  text-decoration: underline;
+  color: #f5f5f5;
+}
+
+/* 🧠 针对首页卡片中 tags 或 post info 小字 contrast 不足问题 */
+.card-text .text-muted,
+.card-footer .text-muted,
+.card-header .text-muted {
+  color: #cccccc !important;  /* 原来太淡，建议升亮 */
+}
+
+/* 👁‍🗨 Breadcrumb 路径导航也提高对比度 */
+nav.breadcrumb,
+nav.breadcrumb a {
+  color: #eeeeee;
+}
+

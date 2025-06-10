@@ -1,0 +1,52 @@
+<!-- JS selector for site. 本地优化版 -->
+
+<!-- ✅ 公共功能：搜索、dayjs、字体图标、懒加载等 -->
+<script defer src="/assets/lib/dayjs/dayjs.min.js"></script>
+<script defer src="/assets/lib/dayjs/locale/en.js"></script>
+<script defer src="/assets/lib/dayjs/plugin/relativeTime.js"></script>
+<script defer src="/assets/lib/dayjs/plugin/localizedFormat.js"></script>
+
+<!-- ✅ Simple Jekyll Search 本地 -->
+<script defer src="/assets/lib/simple-jekyll-search/simple-jekyll-search.min.js"></script>
+
+<!-- ✅ dayjs 初始化 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    dayjs.locale('en');
+    dayjs.extend(window.dayjs_plugin_relativeTime);
+    dayjs.extend(window.dayjs_plugin_localizedFormat);
+  });
+</script>
+
+<!-- ✅ Font Awesome 本地 -->
+<link rel="stylesheet" href="/assets/lib/fontawesome-free/css/all.min.css">
+
+<!-- ✅ Clipboard 功能（可选） -->
+<script defer src="/assets/lib/clipboard/clipboard.min.js"></script>
+
+<!-- ✅ lightbox 图片点击放大（可选） -->
+<script defer src="/assets/lib/glightbox/glightbox.min.js"></script>
+<link rel="stylesheet" href="/assets/lib/glightbox/glightbox.min.css">
+
+<!-- ✅ TOCbot 目录功能 -->
+<link rel="stylesheet" href="/assets/lib/tocbot/tocbot.min.css">
+<script defer src="/assets/lib/tocbot/tocbot.min.js"></script>
+
+<!-- ✅ 自定义页面 JS（原 home.min.js / post.min.js） -->
+{% case page.layout %}
+  {% when 'home', 'categories', 'post', 'page' %}
+    {% assign js = page.layout %}
+  {% when 'archives', 'category', 'tag' %}
+    {% assign js = 'misc' %}
+  {% else %}
+    {% assign js = 'commons' %}
+{% endcase %}
+<script defer src="/assets/js/dist/{{ js }}.min.js"></script>
+
+<!-- ✅ 数学公式（如果需要） -->
+{% if page.math %}
+  <script async src="/assets/js/data/mathjax.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="/assets/lib/mathjax/es5/tex-mml-chtml.js"></script>
+{% endif %}
+
