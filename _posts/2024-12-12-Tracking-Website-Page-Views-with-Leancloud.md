@@ -1,7 +1,7 @@
 ---
 title: "Tracking Website Page Views with Leancloud"
 date: 2024-12-12 13:44:36 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [website, script, leancloud]
 pin: false
 ---

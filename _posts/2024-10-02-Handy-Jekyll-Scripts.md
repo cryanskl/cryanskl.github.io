@@ -1,7 +1,7 @@
 ---
 title: "Handy Jekyll Scripts"
 date: 2024-10-02 03:50:27 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [website,typora, script]     # TAG names should always be lowercase
 pin: false
 ---

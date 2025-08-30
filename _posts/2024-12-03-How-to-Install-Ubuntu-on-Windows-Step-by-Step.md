@@ -1,7 +1,7 @@
 ---
 title: "How to Install Ubuntu on Windows Step by Step"
 date: 2024-12-03 19:53:11 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [ubuntu]
 pin: false
 ---

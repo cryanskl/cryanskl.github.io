@@ -18,7 +18,7 @@ pin: true
   - 参考文献：[Naive RAG (2023)](https://arxiv.org/abs/2312.10997)
 - **Advanced RAG**：在 Naive RAG 的基础上引入更丰富的语义增强机制，例如多粒度切块、复杂的上下文窗口策略等，以提升上下文理解能力和生成准确性。
 
-![image-20250820191223887](assets/image-20250820191223887.png)
+![image-20250820191223887](../assets/typoraimg/image-20250820191223887.png)
 
 ### 1.2 基于图结构的知识建模（Entity/Relation Graph + Graph-based Retrieval）
 
@@ -27,7 +27,7 @@ pin: true
 - **GraphRAG**：融合实体/关系图谱与图检索，支持基于知识图谱的上下文推理和更强的全局语义关联能力，尤其适用于需要高精度关系建模的企业级应用场景。
   - 参考文献：[GraphRAG (2024)](https://arxiv.org/abs/2404.16130)
 
-![image-20250820191235237](assets/image-20250820191235237.png)
+![image-20250820191235237](../assets/typoraimg/image-20250820191235237.png)
 
 ## 2. RAG 技术路线与常用工具
 
@@ -106,3 +106,11 @@ pin: true
 1.Naive rag [https://arxiv.org/abs/2312.10997](https://arxiv.org/abs/2312.10997)
 
 2.graph rag [https://arxiv.org/abs/2404.16130](https://arxiv.org/abs/2404.16130)
+
+
+
+我需要你帮我写一段代码. 我的情况如下: 
+
+我在'D:\GitBlog\_posts\'文件夹里有很多md文件, 命名格式为'2025-03-20-Rag-Essentials-You-Need-to-Know.md',  '2025-03-21-Fundamentals-of-Agent-Theory.md'
+
+我需要这段代码每次执行的时候, 在最新的三篇里检索并改正两个内容: 一个是存放的图片, 一个是时间

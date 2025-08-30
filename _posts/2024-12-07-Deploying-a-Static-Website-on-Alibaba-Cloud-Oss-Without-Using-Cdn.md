@@ -1,7 +1,7 @@
 ---
 title: "Deploying a Static Website on Alibaba Cloud Oss Without Using Cdn"
 date: 2024-12-07 14:53:58 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [website, script, typora, alicloud]
 pin: false
 ---

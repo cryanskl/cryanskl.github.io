@@ -1,7 +1,7 @@
 ---
 title: "Top Conda Commands for Everyday Use"
 date: 2024-10-19 13:54:31 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [script, conda]
 pin: false
 ---

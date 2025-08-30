@@ -1,7 +1,7 @@
 ---
 title: "Launching a Static Website with Alibaba Cloud Oss and Cdn"
 date: 2024-12-06 11:51:37 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [website, alicloud]
 pin: false
 ---

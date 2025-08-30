@@ -1,7 +1,7 @@
 ---
 title: "Custom Domain with Alibaba Cloud CDN"
 date: 2024-10-05 18:24:37 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [website, alicloud]
 pin: false
 ---

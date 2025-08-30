@@ -1,7 +1,7 @@
 ---
 title: "Automated Script for Static Website Submission"
 date: 2024-12-04 16:57:35 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [website, script]
 pin: false
 ---

@@ -141,3 +141,5 @@ messages.append({
 - 若希望模型**同时发起多个调用请求**，需设置 `parallel_tool_calls=True`（默认值）；
 - 若只希望模型每次只调用一个函数，应显式设置 `parallel_tool_calls=False`。
 
+
+

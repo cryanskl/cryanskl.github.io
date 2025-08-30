@@ -1,8 +1,8 @@
 ---
 title: "Fundamentals of Agent Theory"
 date: 2025-03-21 22:57:43 +0800
-categories: [LLM, Dev, Algorithm]
-tags: [llm, rag, website, script]
+categories: [LLM]
+tags: [agent]
 pin: false
 ---
 

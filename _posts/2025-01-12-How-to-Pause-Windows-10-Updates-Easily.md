@@ -1,7 +1,7 @@
 ---
 title: "How to Pause Windows 10 Updates Easily"
 date: 2025-01-12 20:21:06 +0800
-categories: [Dev]
+categories: [Lab]
 tags: [script]
 pin: false
 ---

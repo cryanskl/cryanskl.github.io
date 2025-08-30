@@ -1,13 +1,14 @@
 @echo off
 chcp 65001 > nul
 setlocal
+cd /d "%~dp0"
 
 echo ===============================
-echo 🧹 正在执行 Python 预处理脚本...
+echo 🧰 正在执行一体化预处理（日期修正 + 图片移动与链接修正）...
 echo ===============================
-python preprocess.py
+python rename_total.py
 if errorlevel 1 (
-    echo ❌ Python 脚本执行失败，请检查错误。
+    echo ❌ rename_total.py 执行失败，请检查错误。
     pause
     exit /b
 )
