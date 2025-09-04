@@ -124,7 +124,7 @@ Agent 技术的演化路径如下：
 
 2.COT [https://arxiv.org/pdf/2210.03629](https://arxiv.org/pdf/2210.03629)
 
-3.MultiAgent1 https://arxiv.org/pdf/2308.10848
+3.MultiAgent1 [https://arxiv.org/pdf/2308.10848](https://arxiv.org/pdf/2308.10848)
 
 4.MultiAgent2 [https://arxiv.org/pdf/2308.00352](https://arxiv.org/pdf/2308.00352)
 
